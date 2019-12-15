@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ExamCalendarAssigner.Web.Models;
+using ExamCalendarAssigner.Data.Model;
+using Newtonsoft.Json;
 
 namespace ExamCalendarAssigner.Web.Controllers
 {
@@ -20,6 +22,8 @@ namespace ExamCalendarAssigner.Web.Controllers
 
         public IActionResult Index()
         {
+            string json = System.IO.File.ReadAllText(@"C:\Users\Hilmi\Desktop\data.json");
+            SınavTakvimModel model =JsonConvert.DeserializeObject<SınavTakvimModel>(json);
             return View();
         }
 

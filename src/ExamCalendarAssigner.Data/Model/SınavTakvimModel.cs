@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace ExamCalendarAssigner.Data.Model
 {
-    public class SınavTakvimi
+    public class SınavTakvimModel
     {
         public string baslangic { get; set; }
         public string bitis { get; set; }
