@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<h1>Upload</h1>
+
+<html>
+<body>
+    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Upload">
+            <div class="form-group">
+                <div class="col-md-10">
+
+                    Json File: <input type="file" name="files" />
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="submit" value="Yükle" />
+                </div>
+            </div>
+        </form>
+    
+</body>
+</html>
+
