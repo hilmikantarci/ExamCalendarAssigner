@@ -50,7 +50,7 @@ namespace ExamCalendarAssigner.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Exam}/{action=index}/{id?}");
             });
         }
     }

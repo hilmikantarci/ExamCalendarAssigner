@@ -1,0 +1,40 @@
+﻿
+@model ExamCalendarAssigner.Data.Model.SınavTakvimModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<html>
+<body>
+   <table class="table">
+     <thead>
+         <tr>
+             <th>
+                 
+             </th>
+             <th>
+
+             </th>
+         </tr>
+     </thead>
+
+       <tbody>
+           @foreach(var item in Model.dersler)
+           {
+               <tr>
+                   <td>
+                       @item.kod
+                   </td>
+                   
+               </tr>
+           }
+       </tbody>
+
+   </table>
+
+</body>
+</html>
+

@@ -1,0 +1,941 @@
+{
+	"baslangic": "11.11.2019",
+	"bitis": "23.11.2019",
+	"harici_dersler": [
+		"BS433",
+		"BS447"
+	],
+	"gunluk_max_ayni_sinif_sinav_sayisi": 2,
+	"dersler": [
+		{
+			"kod": "BS401",
+			"baslik": "Mesleki Hukuk ve Etik",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204",
+					"B101"
+				]
+			},
+			"program": [
+				{
+					"gun": "Tuesday",
+					"baslangic": "10:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BS403",
+			"baslik": "Biyomedikal Mühendisliği Temelleri",
+			"sinav": {
+				"sure": 70,
+				"salonlar": [
+					"B205"
+				]
+			},
+			"program": [
+				{
+					"gun": "Tuesday",
+					"baslangic": "13:10",
+					"bitis": "15:00"
+				}
+			]
+		},
+		{
+			"kod": "BS409",
+			"baslik": "Görüntü İşleme",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B101",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "15:00"
+				}
+			]
+		},
+		{
+			"kod": "BS411",
+			"baslik": "Distributed Systems",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Saturday",
+					"baslangic": "10:00",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BS415",
+			"baslik": "Database Programming I",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205"
+				]
+			},
+			"program": [
+				{
+					"gun": "Tuesday",
+					"baslangic": "10:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BS417",
+			"baslik": "Sistem Modelleme ve Kimliklendirme",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "15:00"
+				}
+			]
+		},
+		{
+			"kod": "BS419",
+			"baslik": "Proje Yönetimi",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS423",
+			"baslik": "Foreign Language For Bussiness I",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204",
+					"B203"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS427",
+			"baslik": "Hardware Description Languages",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "15:00"
+				}
+			]
+		},
+		{
+			"kod": "BS429",
+			"baslik": "Introduction to Pattern Recognition",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B204",
+					"B101"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "15:00",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS433",
+			"baslik": "Introduction to Data Mining",
+			"sinav": {
+				"sure": 90
+			},
+			"program": [
+				{
+					"gun": "Tuesday",
+					"baslangic": "8:10",
+					"bitis": "10:00"
+				}
+			]
+		},
+		{
+			"kod": "BS437",
+			"baslik": "Ekonomi",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B204",
+					"B101"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS439",
+			"baslik": "Bilgi Güvenliği",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thursday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS441",
+			"baslik": "Girişimcilik I",
+			"sinav": {
+				"sure": 30,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS443",
+			"baslik": "Scientific Programming",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "10:00",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BS445",
+			"baslik": "Artificial Intelligence Techniques",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "15:00",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS447",
+			"baslik": "Grafik Tasarım ve Animasyon",
+			"sinav": {
+				"sure": 90
+			},
+			"program": [
+				{
+					"gun": "Thursday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS449",
+			"baslik": "Bilgisayar Ağ ve Uygulamaları",
+			"sinav": {
+				"sure": 45,
+				"salonlar": [
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BS455",
+			"baslik": "Medeniyet Tasavvuru I",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B101",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "15:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ101",
+			"baslik": "Matematik I",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B204",
+					"B101",
+					"B201",
+					"B202",
+					"B203",
+					"A101"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "8:10",
+					"bitis": "10:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "10:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ103",
+			"baslik": "Fizik I",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201",
+					"A104",
+					"A106"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Friday",
+					"baslangic": "14:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ105",
+			"baslik": "Lineer Cebir",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				},
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ107",
+			"baslik": "Introduction to Computer Engineering",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201",
+					"B103"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ111",
+			"baslik": "Bilgisayar Programlama I",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B204",
+					"B101",
+					"B203",
+					"B202",
+					"B201",
+					"AZ01",
+					"AZ07"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				},
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ113",
+			"baslik": "İletişim ve Sunum Teknikleri",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B204",
+					"B101",
+					"B203",
+					"B202"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "10:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ203",
+			"baslik": "Electrical Circuits",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B204",
+					"B101",
+					"B104",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "10:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "15:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ205",
+			"baslik": "Veri Yapıları ve Algoritmalar",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "8:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ207",
+			"baslik": "Mühendislik Matematiği",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ209",
+			"baslik": "Object Oriented Programming",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Monday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				},
+				{
+					"gun": "Thusday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ215",
+			"baslik": "Diferansiyel Denklemler",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201",
+					"B103"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ301",
+			"baslik": "Dosya ve Organizasyon Teknikleri",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ303",
+			"baslik": "Bilgisayar Grafik",
+			"sinav": {
+				"sure": 100,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204",
+					"B202"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Friday",
+					"baslangic": "14:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ309",
+			"baslik": "Microprocessors",
+			"sinav": {
+				"sure": 70,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204",
+					"B203",
+					"B202",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "8:10",
+					"bitis": "12:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "8:10",
+					"bitis": "12:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ311",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204",
+					"B202",
+					"B201"
+				]
+			},
+			"baslik": "Sayısal Sistemler Laboratuvarı"
+		},
+		{
+			"kod": "BZ313",
+			"baslik": "Software Engineering",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B104",
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ315",
+			"baslik": "İşletim Sistemleri",
+			"sinav": {
+				"sure": 60,
+				"salonlar": [
+					"B205",
+					"B101",
+					"B204",
+					"B201"
+				]
+			},
+			"program": [
+				{
+					"gun": "Thusday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				},
+				{
+					"gun": "Thursday",
+					"baslangic": "13:10",
+					"bitis": "16:00"
+				}
+			]
+		},
+		{
+			"kod": "BZ403",
+			"baslik": "Computer Architecture",
+			"sinav": {
+				"sure": 90,
+				"salonlar": [
+					"B205",
+					"B203",
+					"B204"
+				]
+			},
+			"program": [
+				{
+					"gun": "Friday",
+					"baslangic": "9:10",
+					"bitis": "12:00"
+				}
+			]
+		}
+	],
+	"gozetmenler": [
+		{
+			"isim": "Arş. Gör. Ceylan BOZOĞULLARINDAN",
+			"gecmis": 1
+		},
+		{
+			"isim": "Arş. Gör. Fatma Özge ÖZKÖK"
+		},
+		{
+			"isim": "Arş. Gör. Tayyip ÖZCAN"
+		},
+		{
+			"isim": "Arş. Gör. Ömür ŞAHİN",
+			"gecmis": 1
+		},
+		{
+			"isim": "Arş. Gör. Mehmet ELMACI",
+			"gecmis": 1
+		},
+		{
+			"isim": "Arş. Gör. Ertuğrul GÜL"
+		},
+		{
+			"isim": "Arş. Gör. Hüseyin ÖZKAYA",
+			"gecmis": 1
+		},
+		{
+			"isim": "Arş. Gör. Damla COŞKUN",
+			"gecmis": 6
+		},
+		{
+			"isim": "Arş. Gör. Asiye ULAŞ"
+		},
+		{
+			"isim": "Arş. Gör. İrfan YILDIRIM"
+		},
+		{
+			"isim": "Arş. Gör. Meryem KARAGÖZ"
+		},
+		{
+			"isim": "Arş. Gör. Demet KARACA"
+		},
+		{
+			"isim": "Yasemin ERŞEPÇİLER",
+			"tur": "yok"
+		},
+		{
+			"isim": "Mualla KÖYLÜ",
+			"tur": "yok"
+		},
+		{
+			"isim": "Gamze KORKMAZ",
+			"tur": "yok"
+		},
+		{
+			"isim": "Gülfem ELGÜN",
+			"tur": "yok"
+		}
+	],
+	"salonlar": [
+		{
+			"kod": "B204",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B205",
+			"kontenjan": 85,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B203",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B202",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B201",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B104",
+			"kontenjan": 85,
+			"gozetmen_sayisi": 2
+		},
+		{
+			"kod": "B101",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B102",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B103",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "B105",
+			"kontenjan": 21,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "A104",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "A106",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "A105",
+			"kontenjan": 85,
+			"gozetmen_sayisi": 2
+		},
+		{
+			"kod": "A202",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "A205",
+			"kontenjan": 68,
+			"gozetmen_sayisi": 2
+		},
+		{
+			"kod": "A101",
+			"kontenjan": 36,
+			"gozetmen_sayisi": 2
+		},
+		{
+			"kod": "AZ01",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		},
+		{
+			"kod": "AZ07",
+			"kontenjan": 48,
+			"gozetmen_sayisi": 1
+		}
+	]
+}
