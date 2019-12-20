@@ -10,9 +10,7 @@ namespace ExamCalendarAssigner.Web.Controllers
 {
     public class ExamController : Controller
     {
-        public string a = "";
-        int i = 0;
-        public string Index()
+        public IActionResult Index()
         {
             string data = System.IO.File.ReadAllText(@"C:\Users\Hilmi\Desktop\aaBTU\ExamCalendarAssigner\src\ExamCalendarAssigner.Web\Models\Data.json");
             SınavTakvimModel ModelData = JsonConvert.DeserializeObject<SınavTakvimModel>(data);
@@ -20,92 +18,63 @@ namespace ExamCalendarAssigner.Web.Controllers
             TarihModel ModelTarih = JsonConvert.DeserializeObject<TarihModel>(tarih);
             //a=Convert.ToDateTime(ModelData.baslangic).DayOfWeek.ToString();
             DateTime baslangic = Convert.ToDateTime(ModelData.baslangic);
-            List<TarihModel> tarihler = new List<TarihModel>();
-            List<DersModel> dersler = new List<DersModel>();
-            for (i = 0; i < 12; i++)
+            List<TarihModel> tarihList = new List<TarihModel>();
+            List<TakvimModel> takvimList = new List<TakvimModel>();            
+            string[] saatler = { "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00" };
+
+            for (int i = 0; i < 12; i++)
             {
 
                 if (baslangic.AddDays(i).DayOfWeek.ToString() != "Saturday" && baslangic.AddDays(i).DayOfWeek.ToString() != "Sunday")
                 {
-                    tarihler.Add(new TarihModel
+                    tarihList.Add(new TarihModel
                     {
                         Tarih = Convert.ToDateTime(ModelData.baslangic).AddDays(i).Date.ToString("dd/M/yy"),
                         Gun = Convert.ToDateTime(ModelData.baslangic).AddDays(i).DayOfWeek.ToString()
                     });
                 }
             }
-            foreach (var item in ModelData.dersler)
+
+            List<DersModel> dersler = new List<DersModel>();
+            List<ProgramModel> program1 = new List<ProgramModel>();
+            string[] gunler = new string[ModelData.dersler.Count];
+            for (int i = 0; i < ModelData.dersler.Count; i++)
             {
+                gunler[i] = ModelData.dersler[i].program[0].gun;
+            }
 
-                dersler.Add(new DersModel { 
-                kod= item.kod,
-                program=item.program[0].gun.ToString()
-                });
-
-                try
+            for (int i = 0; i < ModelData.dersler.Count; i++)
+            {
+                Random rastgelesayi = new Random();
+                int no = rastgelesayi.Next(0, saatler.Length);
+                int no2 = rastgelesayi.Next(0, 1);
+                int no3 = rastgelesayi.Next(0, ModelData.gozetmenler.Count);
+                foreach (var item in tarihList)
                 {
-                    a = a + "\n" + item.program[0].gun.ToString() + "\t \t" + item.kod + "\t" + item.sinav.sure;
-
-                    //string dersMode = ModelData.dersler[0].sinav.salonlar[0];
+                    if (gunler[i] == item.Gun)
+                    {
+                        TakvimModel takvim = new TakvimModel
+                        {
+                            Tarih = new List<TarihModel>
+                            {
+                                new TarihModel
+                                {
+                                    Tarih = item.Tarih,
+                                    Gun = item.Gun
+                                }
+                            },
+                            Saat = saatler[no],
+                            dersKodu = ModelData.dersler[i].kod,
+                            dersAdi = ModelData.dersler[i].baslik,
+                            Salon = "B204",
+                            gozetmen = "deneme"
+                        };
+                        takvimList.Add(takvim);
+                        break;
+                    }
                 }
-                catch (Exception)
-                {
-                    continue;
-                }
             }
-             // a = ModelTarih.Tarih[0].ToString() + ModelTarih.Gun[0].ToString();
-            //ModelData.dersler[0].kod.ToString() + ModelData.salonlar[0].kod.ToString() + ModelData.gozetmenler[0].isim.ToString();
-
-
-            // a = newDate.ToShortDateString();
-
-            if(ModelData.dersler[0].program[0].gun.to=tarihler[0].Gun.ToString())
-            {
-                foreach (var item in tarihler)
-            {
-
-                a = (a + item.Tarih + "\t" + item.Gun) + "\n";
-
-            }
-            }
-
-            return a;
+            return Ok(JsonConvert.SerializeObject(tarihList));
         }
-
-
-
-
-
-        //public string a = "";
-
-        //public string Index()
-        //{       
-
-        //    var gun = DateTime.Today;
-        //    var ilk = gun.AddDays(1 - (int)gun.DayOfWeek);
-        //    var son = dateTime.AddDays(5 - (int)gun.DayOfWeek);
-        //    var son2 = gun.AddDays(5 - (int)gun.DayOfWeek);
-
-        //    string json = System.IO.File.ReadAllText(@"C:\Users\Hilmi\Desktop\aaBTU\ExamCalendarAssigner\src\ExamCalendarAssigner.Web\Models\Data.json");
-        //    SınavTakvimModel ModelData = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
-        //    DateTime dateTime = Convert.ToDateTime(ModelData.baslangic);
-
-        //    foreach (var item in ModelData.dersler)
-        //    {
-
-        //        try
-        //        {
-        //            a = a + "\n" + item.program[0].gun.ToString() + "\t \t" + item.kod + "\t" + item.sinav.sure;
-
-        //            //string dersMode = ModelData.dersler[0].sinav.salonlar[0];
-        //        }
-        //        catch (Exception)
-        //        {
-        //            continue;
-        //        }
-        //    }
-
-        //    return a;
-        //}
     }
 }

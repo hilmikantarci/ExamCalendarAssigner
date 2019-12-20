@@ -10,6 +10,7 @@ namespace ExamCalendarAssigner.Data.Model
         public List<TarihModel> Tarih { get; set; }
         public string Saat { get; set; }
         public string dersKodu { get; set; }
+        public string dersAdi { get; set; }
         public string Salon { get; set; }
         public string gozetmen { get; set; }
     }

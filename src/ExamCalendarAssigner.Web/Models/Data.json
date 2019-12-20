@@ -721,7 +721,14 @@
 					"B201"
 				]
 			},
-			"baslik": "Sayısal Sistemler Laboratuvarı"
+			"baslik": "Sayısal Sistemler Laboratuvarı",
+			"program": [
+				{
+					"gun": "Wednesday",
+					"baslangic": "13:10",
+					"bitis": "17:00"
+				}
+			]
 		},
 		{
 			"kod": "BZ313",
