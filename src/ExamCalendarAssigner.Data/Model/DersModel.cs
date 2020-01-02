@@ -8,5 +8,6 @@ namespace ExamCalendarAssigner.Data.Model
         public string baslik { get; set; }
         public SinavModel sinav { get; set; }
         public List<ProgramModel> program { get; set; }
+        public bool Atandi { get; set; }
     }
 }
