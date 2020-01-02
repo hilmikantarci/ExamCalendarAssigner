@@ -1,6 +1,11 @@
 {
-	"baslangic": "11.11.2019",
-	"bitis": "23.11.2019",
+	"baslangic": "2019.12.23",
+	"bitis": "2020.01.03",
+	"tatil": [
+		"2019.12.27",
+		"2019.12.28",
+		"2020.01.01"
+	],
 	"harici_dersler": [
 		"BS433",
 		"BS447"
@@ -71,7 +76,7 @@
 			},
 			"program": [
 				{
-					"gun": "Saturday",
+					"gun": "Thursday",
 					"baslangic": "10:00",
 					"bitis": "12:00"
 				}
@@ -186,7 +191,10 @@
 			"kod": "BS433",
 			"baslik": "Introduction to Data Mining",
 			"sinav": {
-				"sure": 90
+				"sure": 90,
+				"salonlar": [
+					"B204"
+				]
 			},
 			"program": [
 				{
@@ -288,7 +296,10 @@
 			"kod": "BS447",
 			"baslik": "Grafik Tasarım ve Animasyon",
 			"sinav": {
-				"sure": 90
+				"sure": 90,
+				"salonlar": [
+					"B205"
+				]
 			},
 			"program": [
 				{
@@ -327,7 +338,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
+					"gun": "Tuesday",
 					"baslangic": "15:10",
 					"bitis": "17:00"
 				}
@@ -380,12 +391,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
-					"baslangic": "9:10",
-					"bitis": "12:00"
-				},
-				{
-					"gun": "Friday",
+					"gun": "Thursday",
 					"baslangic": "14:10",
 					"bitis": "17:00"
 				}
@@ -436,7 +442,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
+					"gun": "Thursday",
 					"baslangic": "13:10",
 					"bitis": "16:00"
 				},
@@ -627,7 +633,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
+					"gun": "Thursday",
 					"baslangic": "9:10",
 					"bitis": "12:00"
 				},
@@ -698,11 +704,6 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
-					"baslangic": "8:10",
-					"bitis": "12:00"
-				},
-				{
 					"gun": "Thursday",
 					"baslangic": "8:10",
 					"bitis": "12:00"
@@ -711,6 +712,7 @@
 		},
 		{
 			"kod": "BZ311",
+			"baslik": "Sayısal Sistemler Laboratuvarı",
 			"sinav": {
 				"sure": 90,
 				"salonlar": [
@@ -721,7 +723,6 @@
 					"B201"
 				]
 			},
-			"baslik": "Sayısal Sistemler Laboratuvarı",
 			"program": [
 				{
 					"gun": "Wednesday",
@@ -763,7 +764,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thusday",
+					"gun": "Tuesday",
 					"baslangic": "13:10",
 					"bitis": "16:00"
 				},

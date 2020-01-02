@@ -11,23 +11,27 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Web;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.Extensions.Hosting;
 
 namespace ExamCalendarAssigner.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IHostEnvironment _env;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,
+            IHostEnvironment env
+            )
         {
             _logger = logger;
+            _env = env;
         }
 
         public IActionResult Index()
         {
-            string json = System.IO.File.ReadAllText(@"C:\Users\Hilmi\Desktop\data.json");
-            SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
+            //string json = System.IO.File.ReadAllText(@"C:\Users\Hilmi\Desktop\data.json");
+            //SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
             return View();
         }
         [HttpGet]
@@ -46,20 +50,23 @@ namespace ExamCalendarAssigner.Web.Controllers
                 content = reader.ReadToEnd();
             }
 
-            const string Datapath = @"C:\Users\Hilmi\Desktop\aaBTU\ExamCalendarAssigner\src\ExamCalendarAssigner.Web\Models\Data.json";
-
-            SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(content);
-            System.IO.File.WriteAllText(Datapath, "");
-            System.IO.File.WriteAllText(Datapath, content);
-            string json = System.IO.File.ReadAllText(Datapath);
-            SınavTakvimModel ModelData = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
+            string datapath = $"{_env.ContentRootPath}\\Models\\Data.json";
 
 
 
-            DersModel dersModel = ModelData.dersler[0];
-            string dersMode = ModelData.dersler[0].sinav.salonlar[0];
+            //SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(content);
+            //System.IO.File.WriteAllText(Datapath, "");
+            //System.IO.File.WriteAllText(Datapath, content);
+            //string json = System.IO.File.ReadAllText(Datapath);
+            //SınavTakvimModel ModelData = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
 
-            return dersMode;
+
+
+            //DersModel dersModel = ModelData.dersler[0];
+            //string dersMode = ModelData.dersler[0].sinav.salonlar[0];
+
+            //return dersMode;
+            throw new Exception();
 
         }
         //public async Task<IActionResult> Upload(List<IFormFile> files)
