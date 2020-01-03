@@ -44,14 +44,15 @@ namespace ExamCalendarAssigner.Web.Controllers
         {
 
             var content = string.Empty;
+            string datapath = $"{_env.ContentRootPath}\\Models\\Data.json";
+
 
             using (var reader = new StreamReader(files.OpenReadStream()))
             {
                 content = reader.ReadToEnd();
             }
 
-            string datapath = $"{_env.ContentRootPath}\\Models\\Data.json";
-
+            
 
 
             //SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(content);

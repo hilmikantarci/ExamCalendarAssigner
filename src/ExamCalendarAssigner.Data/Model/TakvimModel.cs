@@ -11,7 +11,7 @@ namespace ExamCalendarAssigner.Data.Model
         public TimeSpan Saat { get; set; }
         public string dersKodu { get; set; }
         public string dersAdi { get; set; }
-        public string Salon { get; set; }
+        public List<string> Salonlar { get; set; }
         public string gozetmen { get; set; }
     }
 }
