@@ -25,7 +25,7 @@ namespace ExamCalendarAssigner.Web.Controllers
         }
 
         List<TakvimModel> takvimList = new List<TakvimModel>();
-        public List<TakvimModel> Index()
+        public IActionResult Index()
         {
             string datapath = $"{_env.ContentRootPath}\\Models\\Data.json";
             string data = System.IO.File.ReadAllText(datapath);
@@ -59,7 +59,7 @@ namespace ExamCalendarAssigner.Web.Controllers
 
                 var baslangicSaati = 9;
                 var ogleSaati = 12;
-                var bitisSaati = 17;
+                var bitisSaati = 16;
 
                 DersModel oncekiDers = null;
                 TakvimModel oncekiTakvim = null;
@@ -89,9 +89,9 @@ namespace ExamCalendarAssigner.Web.Controllers
                         else if ((takvim.Saat.Hours == 11) && (takvim.Saat.Minutes > 0))
                         {
                             if (takvim.Tarih.DayOfWeek != DayOfWeek.Friday)
-                                takvim.Saat = new TimeSpan(ogleSaati + 2, 0, 0);
+                                takvim.Saat = new TimeSpan(ogleSaati + 1, 30, 0);
                             else
-                                takvim.Saat = new TimeSpan(ogleSaati + 2, 30, 0);
+                                takvim.Saat = new TimeSpan(ogleSaati + 2, 0, 0);
                         }
                         else if (takvim.Saat.Minutes == 0)
                             takvim.Saat = new TimeSpan(takvim.Saat.Hours, 0, 0);
@@ -102,15 +102,16 @@ namespace ExamCalendarAssigner.Web.Controllers
                     }
                     takvim.dersKodu = ders.kod;
                     takvim.dersAdi = ders.baslik;
-                    takvim.Salonlar = ders.sinav.salonlar;
+                    takvim.Salonlar = ders.sinav.salonlar.ToList();
                     takvim.gozetmen = "default";
                     takvimList.Add(takvim);
                     ders.Atandi = true;
                     oncekiDers = ders;
                     oncekiTakvim = takvim;
-
+                  
                     if (takvim.Saat.Hours >= bitisSaati)
                         break;
+                    
                 }
             }
             var atanmayanDersler = modelData.dersler.Where(t => t.Atandi == false);
@@ -126,6 +127,7 @@ namespace ExamCalendarAssigner.Web.Controllers
                 else
                 {
                     takvim.Saat = oncekiTakvim.Saat.Add(new TimeSpan(0, oncekiDers.sinav.sure, 0));
+
                 }
                 takvim.dersKodu = item.kod;
                 takvim.dersAdi = item.baslik;
@@ -138,7 +140,7 @@ namespace ExamCalendarAssigner.Web.Controllers
 
             }
 
-            return takvimList;
+            return View(takvimList);
         //    string json = JsonConvert.SerializeObject(takvimList.ToString());
 
         //    string jsonString = JsonSerializer.Serialize(, takvimList.ToString());

@@ -1,5 +1,5 @@
 ﻿
-@model ExamCalendarAssigner.Data.Model.SınavTakvimModel
+@model List<ExamCalendarAssigner.Data.Model.TakvimModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -22,14 +22,32 @@
      </thead>
 
        <tbody>
-           @foreach(var item in Model.dersler)
+           @foreach(var item in Model)
            {
-               <tr>
-                   <td>
-                       @item.kod
-                   </td>
-                   
-               </tr>
+           <tr>
+               <td>
+                   @item.Tarih
+               </td>
+               <td>
+                   @item.Tarih.DayOfWeek
+               </td>
+               <td>
+                   @item.Saat
+               </td>
+               <td>
+                   @item.dersKodu
+               </td>
+               <td>
+                   @item.dersAdi
+               </td>
+               <td>
+                   @item.Salonlar.ToList()
+               </td>
+               <td>
+                   @item.gozetmen
+               </td>
+
+           </tr>
            }
        </tbody>
 

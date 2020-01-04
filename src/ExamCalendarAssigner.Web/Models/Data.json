@@ -34,7 +34,7 @@
 			"kod": "BS403",
 			"baslik": "Biyomedikal Mühendisliği Temelleri",
 			"sinav": {
-				"sure": 70,
+				"sure": 75,
 				"salonlar": [
 					"B205"
 				]
@@ -69,7 +69,7 @@
 			"kod": "BS411",
 			"baslik": "Distributed Systems",
 			"sinav": {
-				"sure": 60,
+				"sure": 70,
 				"salonlar": [
 					"B204"
 				]
@@ -103,14 +103,14 @@
 			"kod": "BS417",
 			"baslik": "Sistem Modelleme ve Kimliklendirme",
 			"sinav": {
-				"sure": 60,
+				"sure": 90,
 				"salonlar": [
 					"B204"
 				]
 			},
 			"program": [
 				{
-					"gun": "Wednesday",
+					"gun": "Friday",
 					"baslangic": "13:10",
 					"bitis": "15:00"
 				}
@@ -156,7 +156,7 @@
 			"kod": "BS427",
 			"baslik": "Hardware Description Languages",
 			"sinav": {
-				"sure": 60,
+				"sure": 75,
 				"salonlar": [
 					"B204"
 				]
@@ -208,7 +208,7 @@
 			"kod": "BS437",
 			"baslik": "Ekonomi",
 			"sinav": {
-				"sure": 60,
+				"sure": 75,
 				"salonlar": [
 					"B204",
 					"B101"
@@ -244,7 +244,7 @@
 			"kod": "BS441",
 			"baslik": "Girişimcilik I",
 			"sinav": {
-				"sure": 30,
+				"sure": 45,
 				"salonlar": [
 					"B204"
 				]
@@ -330,7 +330,7 @@
 			"kod": "BS455",
 			"baslik": "Medeniyet Tasavvuru I",
 			"sinav": {
-				"sure": 60,
+				"sure": 75,
 				"salonlar": [
 					"B101",
 					"B201"
@@ -361,15 +361,10 @@
 			},
 			"program": [
 				{
-					"gun": "Monday",
+					"gun": "Thursday",
 					"baslangic": "8:10",
 					"bitis": "10:00"
-				},
-				{
-					"gun": "Thursday",
-					"baslangic": "10:10",
-					"bitis": "12:00"
-				}
+				}				
 			]
 		},
 		{
@@ -391,7 +386,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thursday",
+					"gun": "Tuesday",
 					"baslangic": "14:10",
 					"bitis": "17:00"
 				}
@@ -520,15 +515,11 @@
 			},
 			"program": [
 				{
-					"gun": "Wednesday",
+					"gun": "Thursday",
 					"baslangic": "10:10",
 					"bitis": "12:00"
-				},
-				{
-					"gun": "Wednesday",
-					"baslangic": "13:10",
-					"bitis": "15:00"
 				}
+				
 			]
 		},
 		{
@@ -575,11 +566,7 @@
 				]
 			},
 			"program": [
-				{
-					"gun": "Wednesday",
-					"baslangic": "13:10",
-					"bitis": "16:00"
-				},
+				
 				{
 					"gun": "Thursday",
 					"baslangic": "13:10",
@@ -633,12 +620,7 @@
 			},
 			"program": [
 				{
-					"gun": "Thursday",
-					"baslangic": "9:10",
-					"bitis": "12:00"
-				},
-				{
-					"gun": "Thursday",
+					"gun": "Tuesday",
 					"baslangic": "9:10",
 					"bitis": "12:00"
 				}
@@ -648,7 +630,7 @@
 			"kod": "BZ301",
 			"baslik": "Dosya ve Organizasyon Teknikleri",
 			"sinav": {
-				"sure": 60,
+				"sure": 75,
 				"salonlar": [
 					"B205",
 					"B101",
@@ -657,7 +639,7 @@
 			},
 			"program": [
 				{
-					"gun": "Wednesday",
+					"gun": "Monday",
 					"baslangic": "9:10",
 					"bitis": "12:00"
 				}
@@ -680,19 +662,15 @@
 					"gun": "Friday",
 					"baslangic": "9:10",
 					"bitis": "12:00"
-				},
-				{
-					"gun": "Friday",
-					"baslangic": "14:10",
-					"bitis": "17:00"
-				}
+				}			
+
 			]
 		},
 		{
 			"kod": "BZ309",
 			"baslik": "Microprocessors",
 			"sinav": {
-				"sure": 70,
+				"sure": 90,
 				"salonlar": [
 					"B205",
 					"B101",
@@ -725,7 +703,7 @@
 			},
 			"program": [
 				{
-					"gun": "Wednesday",
+					"gun": "Thursday",
 					"baslangic": "13:10",
 					"bitis": "17:00"
 				}
@@ -735,7 +713,7 @@
 			"kod": "BZ313",
 			"baslik": "Software Engineering",
 			"sinav": {
-				"sure": 90,
+				"sure": 60,
 				"salonlar": [
 					"B205",
 					"B104",
@@ -754,7 +732,7 @@
 			"kod": "BZ315",
 			"baslik": "İşletim Sistemleri",
 			"sinav": {
-				"sure": 60,
+				"sure": 75,
 				"salonlar": [
 					"B205",
 					"B101",
@@ -764,15 +742,11 @@
 			},
 			"program": [
 				{
-					"gun": "Tuesday",
-					"baslangic": "13:10",
-					"bitis": "16:00"
-				},
-				{
 					"gun": "Thursday",
 					"baslangic": "13:10",
 					"bitis": "16:00"
 				}
+			
 			]
 		},
 		{
