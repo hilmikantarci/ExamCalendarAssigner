@@ -40,34 +40,25 @@ namespace ExamCalendarAssigner.Web.Controllers
             return View();
         }
         [HttpPost]
-        public string Upload(IFormFile files)
+        public IActionResult Upload(IFormFile files)
         {
 
             var content = string.Empty;
-            string datapath = $"{_env.ContentRootPath}\\Models\\Data.json";
+            //string datapath = $"{_env.ContentRootPath}\\Models\\Data_${DateTime.Now.ToString("yyyymmdd_hhMMss")}.json";
+            string datapath = $"{_env.ContentRootPath}\\Models\\data.json";
 
 
             using (var reader = new StreamReader(files.OpenReadStream()))
             {
                 content = reader.ReadToEnd();
-            }
-
-            
+            }                   
 
 
-            //SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(content);
-            //System.IO.File.WriteAllText(Datapath, "");
-            //System.IO.File.WriteAllText(Datapath, content);
-            //string json = System.IO.File.ReadAllText(Datapath);
-            //SınavTakvimModel ModelData = JsonConvert.DeserializeObject<SınavTakvimModel>(json);
+            SınavTakvimModel model = JsonConvert.DeserializeObject<SınavTakvimModel>(content);
+            System.IO.File.WriteAllText(datapath, "");
+            System.IO.File.WriteAllText(datapath, content);
 
-
-
-            //DersModel dersModel = ModelData.dersler[0];
-            //string dersMode = ModelData.dersler[0].sinav.salonlar[0];
-
-            //return dersMode;
-            throw new Exception();
+            return View();
 
         }
         //public async Task<IActionResult> Upload(List<IFormFile> files)

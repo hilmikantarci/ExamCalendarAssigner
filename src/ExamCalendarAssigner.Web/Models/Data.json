@@ -364,7 +364,7 @@
 					"gun": "Thursday",
 					"baslangic": "8:10",
 					"bitis": "10:00"
-				}				
+				}
 			]
 		},
 		{
@@ -519,7 +519,7 @@
 					"baslangic": "10:10",
 					"bitis": "12:00"
 				}
-				
+
 			]
 		},
 		{
@@ -566,7 +566,7 @@
 				]
 			},
 			"program": [
-				
+
 				{
 					"gun": "Thursday",
 					"baslangic": "13:10",
@@ -662,7 +662,7 @@
 					"gun": "Friday",
 					"baslangic": "9:10",
 					"bitis": "12:00"
-				}			
+				}
 
 			]
 		},
@@ -746,7 +746,7 @@
 					"baslangic": "13:10",
 					"bitis": "16:00"
 				}
-			
+
 			]
 		},
 		{

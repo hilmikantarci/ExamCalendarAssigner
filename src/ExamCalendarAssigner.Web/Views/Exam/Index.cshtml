@@ -58,7 +58,11 @@
                     @item.dersAdi
                 </td>
                 <td>
-                    @item.Salonlar
+                    @foreach (var salon in item.Salonlar)
+                    {
+                        @Html.DisplayFor(modelItem => salon)
+                        <br />
+                    }
                 </td>
                 <td>
                     @item.gozetmen
