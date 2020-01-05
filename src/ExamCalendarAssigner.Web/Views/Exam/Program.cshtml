@@ -1,11 +1,9 @@
 ﻿
 @model List<ExamCalendarAssigner.Data.Model.TakvimModel>
-
 @{
-    ViewData["Title"] = "İlk Program";
+    ViewData["Title"] = "Program";
 }
-
-<h1>Index</h1>
+<h1>Program</h1>
 <div>
     <a asp-action="Index">Create New</a>
 </div>
@@ -66,10 +64,9 @@
                 <td>
                     <a asp-controller="Exam" asp-action="edit" asp-route-id="@item.dersKodu">Edit</a>
                 </td>
-
+                
             </tr>
             }
-            
         </tbody>
 
     </table>

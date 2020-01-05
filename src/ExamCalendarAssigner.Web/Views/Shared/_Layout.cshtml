@@ -25,7 +25,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Upload">Upload</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Exam" asp-action="Index">Result</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Exam" asp-action="Program">Program</a>
                         </li>
                     </ul>
                 </div>
@@ -49,3 +49,122 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+
+@*
+
+    <!DOCTYPE html>
+
+    <html lang "en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <!---css-->
+        <!-- <link rel="stylesheet" "text/css" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" "text/css" href="css/style.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #4fb4fc;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="~/Home/index" style="color: black;">Ana sayfa</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="color: black;">Öğrenci <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    @*<li class="nav-item">
+                            <a class="nav-link" href="~/Lesson/Create" style="color: black;">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black;">Link</a>
+                        </li>
+
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            Tablolar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Ders</a>
+                            <a class="dropdown-item" href="#">Sınıf</a>
+                            <a class="dropdown-item" href="#">Gözetmen</a>
+                            <a class="dropdown-item" href="#">Saat</a>
+                        </div>
+                    </li>
+                    <!DOCTYPE html>
+
+                    <html lang "en">
+                    <head>
+                        <meta charset="UTF-8" />
+                        <title>Document</title>
+                        <!---css-->
+                        <!-- <link rel="stylesheet" "text/css" href="css/bootstrap-grid.css">
+                        <link rel="stylesheet" "text/css" href="css/style.css"> -->
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                    </head>
+                    <body>
+                        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #4fb4fc;">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="~/Home/index" style="color: black;">Ana sayfa</a>
+
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#" style="color: black;">Öğrenci <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    @*<li class="nav-item">
+                                            <a class="nav-link" href="~/Lesson/Create" style="color: black;">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" style="color: black;">Link</a>
+                                        </li>
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                                            Tablolar
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Ders</a>
+                                            <a class="dropdown-item" href="#">Sınıf</a>
+                                            <a class="dropdown-item" href="#">Gözetmen</a>
+                                            <a class="dropdown-item" href="#">Saat</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="navbar-text" style="color: black;">
+                                    <h3>OTONOM SINAV TAKVİMİ</h3>
+                                </span>
+                            </div>
+                        </nav>
+                        <div>
+                            @RenderBody()
+                        </div>
+
+
+
+                        <!--js-->
+                        <!-- <script src="js/jquery-3.4.1.min.js"></script>
+                        <script src="js/bootstrap.min.js"></script> -->
+                        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                    </body>
+                </html>*@
+
+
+
+
+
